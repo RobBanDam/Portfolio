@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Roberto Martínez">
+    <meta name="description" content="Portfolio">
+    <meta name="keywords" content="HTML, CSS, JS & ReactJS">
+    <title>Portfolio | Roberto Martínez</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="./styles/style.css">
+    <link rel="icon" type="image/x-icon" href="./img/code-slash.svg">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Krub:wght@300&family=Quicksand:wght@500&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Barra de Nav -->
+    <nav class="navbar navbar-expand-md navbar-light navbar-light fixed-top">
+        <div class="container-fluid">
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbar-toggler" aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbar-toggler">
+            <a class="navbar-brand" href="#">
+                <img src="./img/pc-display-horizontal.svg" width="50" alt="Logo de Portfolio">
+            </a>
+
+            <ul class="navbar-nav d-flex justify-content-center align-items-center">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#about-me">Sobre Mí</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#proyects">Proyectos</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#contact-me">Contacto</a>
+              </li>
+            </ul>
+
+          </div>
+        </div>
+    </nav>
+
+    <!-- SecciónPrincipal -->
+    <section class="hero align-items-stretch">
+        <div class="hero-principal d-flex flex-column justify-content-center align-items-center">
+            <img class="img-perfil" src="./img/perfil.jpg" alt="Foto Personal">
+            <h1>¡Hola, te doy la bienvenida a mi jardín virtual!</h1>
+            <h2>Licenciado en Informática, apasionado en el mundo de la tecnología</h2>
+        </div>
+
+        <div class="hero-inferior">
+            <img class="hero-inferior-img img-fluid" src="./img/hero-inferior.svg" alt="Imagen de Desarrollo Web">
+        </div>
+    </section>
+
+    <!-- AboutMe -->
+    <section class="sobre-mi seccion-oscura" id="about-me">
+        <div class="contenedor">
+            <h2 class="seccion-titulo">Conoce a Roberto Martínez</h2>
+            <p class="seccion-texto">Un placer poder compartir este espacio contigo. <br> Soy orgullosamente egresado de mi alma mater "Universidad Autónoma del Estado de Morelos". <br> Durante mi tiempo en la universidad, adquirí un profundo conocimiento en esta apasionante disciplina y desarrollé habilidades que me permiten abordar con éxito desafíos en el mundo de la tecnología. Permíteme compartir un poco más sobre mi trayectoria y experiencia en este emocionante campo.<br></p>
+        </div>
+        <br>
+        <a href="./docs/CV Roberto Carlos Martinez A.pdf" target="_blank" rel="noopener noreferrer"> <-- Visualiza mi CV --></a>
+    </section>
+
+    <!-- Exp -->
+    <section class="experiencia seccion-clara">
+        <div class="container text-center">
+            <div class="row">
+                <div class="columna col-12 col-md-4">
+                    <i class="bi bi-laptop"></i>
+                    <p class="experiencia-titulo">Desarrollo Web</p>
+                    <p>Mi experiencia en el desarrollo web se ha centrado en la creación de sitios y aplicaciones web atractivas y funcionales. He trabajado con una variedad de tecnologías, incluyendo: </p>
+                    <div class="badges-contenedor">
+                        <span class="badge bg-primary">HTML</span>
+                        <span class="badge bg-primary">CSS</span>
+                        <span class="badge bg-primary">SASS</span>
+                        <span class="badge bg-primary">Bootstrap</span>
+                        <span class="badge bg-primary">JavaScript</span>
+                        <span class="badge bg-primary">PHP</span>
+                        <span class="badge bg-primary">MySQL</span>
+                    </div>
+                </div>
+
+                <div class="columna col-12 col-md-4">
+                    <i class="bi bi-plus-square"></i>
+                    <p class="experiencia-titulo">Mejoras</p>
+                    <p>Mi experiencia en el desarrollo web ha mejorado gracias a los frameworks famosos como:</p>
+                    <div class="badges-contenedor">
+                        <span class="badge bg-primary">React</span>
+                        <span class="badge bg-primary">VueJS</span>
+                        <span class="badge bg-primary">Angular</span>
+                        <span class="badge bg-primary">Laravel</span>
+                    </div>
+                </div>
+
+                <div class="columna col-12 col-md-4">
+                    <i class="bi bi-info-square-fill"></i>
+                    <p class="experiencia-titulo">Otros temas</p>
+                    <p>Como profesional con una licenciatura en informática, durante mis estudios en la Universidad, obtuve conocimientos en otras áreas, como lo son:</p>
+                    <div class="badges-contenedor">
+                        <span class="badge bg-primary">Ingeniería de Software</span>
+                        <span class="badge bg-primary">Redes de Comunicación</span>
+                        <span class="badge bg-primary">Seguridad Informática</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Proyects -->
+    <section class="proyectos-recientes seccion-clara d-flex flex-column" id="proyects">
+        <h2 class="seccion-titulo texto-negro">Mis Proyectos</h2>
+        <h3 class="seccion-descripcion">Estos son algunos proyectos que he creado recientemente...</h3>
+        <!-- galeriaProyectos -->
+        <div class="container text-center proyectos-contenedor">
+            <div class="row">
+                <!-- Inicio de espacio de proyecto -->
+                <div class="col-12 col-md-6 col-lg-4">
+                    <div class="proyecto">
+                        <img src="./img/store.PNG" alt="Proyecto 1">
+                        <div class="overlay">
+                            <p>Proyecto FrontEnd_store</p>
+                            <div class="iconos-contenedor">
+                                <a href="
+                                https://github.com/RobBanDam/ejemplo_tienda" target="_blank" rel="noopener noreferrer">
+                                    <i class="bi bi-github"></i>
+                                </a>
+
+                                <a href="https://robbandam.github.io/ejemplo_tienda/index.html" target="_blank" rel="noopener noreferrer">
+                                    <i class="bi bi-laptop"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-12 col-md-6 col-lg-4">
+                    <div class="proyecto">
+                        <img src="./img/Rock.PNG" alt="Proyecto 1">
+                        <div class="overlay">
+                            <p>Proyecto Galería_Cartelera</p>
+                            <div class="iconos-contenedor">
+                                <a href="https://github.com/RobBanDam/festival_musica" target="_blank" rel="noopener noreferrer">
+                                    <i class="bi bi-github"></i>
+                                </a>
+
+                                <a href="https://robbandam.github.io/festival_musica/" target="_blank" rel="noopener noreferrer">
+                                    <i class="bi bi-laptop"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-12 col-md-6 col-lg-4">
+                    <div class="proyecto">
+                        <img src="./img/cafe.PNG" alt="Proyecto 1">
+                        <div class="overlay">
+                            <p>Proyecto BlogCafé</p>
+                            <div class="iconos-contenedor">
+                                <a href="https://github.com/RobBanDam/BlogCafe" target="_blank" rel="noopener noreferrer">
+                                    <i class="bi bi-github"></i>
+                                </a>
+
+                                <a href="https://robbandam.github.io/BlogCafe/" target="_blank" rel="noopener noreferrer">
+                                    <i class="bi bi-laptop"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <a href="https://github.com/RobBanDam" target="_blank" rel="noopener noreferrer">
+            <button type="button" class="btn btn-info">
+                Ver más proyectos
+                <i class="bi bi-arrow-right-circle-fill"></i>
+            </button>
+        </a>
+    </section>
+    <br>
+
+    <!-- Contacto -->
+    <section class="contacto seccion-oscura" id="contact-me">
+        <div class="container">
+            <div class="container text-center d-flex justify-content-evenly rectangulo">
+                <div class="row">
+                    <div class="col-12 col-md-4 seccion-titulo">
+                        ¡Hablemos!
+                    </div>
+                    <div class="col-12 col-md-4 descripcion">
+                        Contáctame para iniciar proyectos
+                    </div>
+                    <div class="col-12 col-md-4">
+                        <a href="mailto:robert.mtz.a.08@gmail.com">
+                            <button type="button">
+                                Contacto
+                                <i class="bi bi-envelope-check-fill"></i>
+                            </button>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- footer & SocialMedia -->
+    <footer class="seccion-oscura d-flex flex-column align-items-center justify-content-center">
+        <img class="footer-logo white-icon" src="./img/code-slash.svg" alt="Logo del Portfolio">
+        <p class="footer-texto text-center">Aprendamos y mejoremos todos los días<br>Leave Your Mark!</p>
+        <div class="iconos-redes-sociales d-flex flex-wrap align-items-center justify-content-center">
+            <a href="https://www.facebook.com/RobBanDam08" target="_blank" rel="noopener noreferrer">
+                <i class="bi bi-facebook"></i>
+            </a>
+            <a href="https://github.com/RobBanDam" target="_blank" rel="noopener noreferrer">
+                <i class="bi bi-github"></i>
+            </a>
+            <a href="mailto:robert.mtz.a.08@gmail.com" target="_blank" rel="noopener noreferrer">
+                <i class="bi bi-envelope"></i>
+            </a>
+            <a href="https://www.linkedin.com/in/roberto-mart%C3%ADnez-aparicio-7705b3295/" target="_blank" rel="noopener noreferrer">
+                <i class="bi bi-linkedin"></i>
+            </a>
+        </div>
+        <div class="derechos">
+            Creado por Roberto Martínez &copy;
+        </div>
+    </footer>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    <script src="app.js"></script>
+</body>
+</html>
